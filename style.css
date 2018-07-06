@@ -1,0 +1,78 @@
+body {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo-box {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#logo-img {
+    border: 3px solid;
+    border-color: rgb(255, 208, 216);
+}
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    
+    /* using display:flex allows you to use flex properties
+    to build a responsive page */
+
+    display: flex; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 208, 216);
+    border: 2px;
+    border-color: black;
+}
+#form {
+    padding: 20px 30px 20px 30px;
+       
+}
+
+.block {
+    margin-bottom: 7px;
+}
+.left-column {
+    /* check https://www.w3schools.com/cssref/pr_class_display.asp for display propertiers*/
+    /* inline-block attribute results in height and width properties will have no effect*/
+    display: inline-block;
+    text-align: right;
+    width: 300px;
+    vertical-align: top;
+    padding-right: 5px;
+    
+}
+
+.right-column {
+    display:inline-block;
+    width: 300px;
+    
+}
+
+#age-input {
+    width: 50px;
+}
+.rating-dials {
+    margin-right: 5px;
+    padding-right: 10px;
+}
+ 
+#submit-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+#submit-btn {
+    width: 100px;
+    border-radius: 5px;
+    
+}

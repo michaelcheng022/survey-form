@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> Survey Form</title>
+        <div id="logo-box">
+                <img src="https://cdn-az.allevents.in/banners/2ef5c33bb2f13478d446f77a4ae190d5" alt="Spring Splash 2017" id="logo-img">
+        </div>
+        
+        <h1 id = "title"><strong>SURVEY FORM</strong></h1>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel ="stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <div id = "form" class ="container">
+            <!-- <form> tag used to create HTML form for user input
+            for reference use https://www.w3schools.com/tags/tag_form.asp -->
+            <form id ="survey-form"> 
+                
+                <!-- <input> tag specifies an input field where the user can enter data 
+                <br> tag used for making a line break-->
+                <div class="block">
+                    <label id="name-label" for ="name" class = "left-column">*Name: </label>
+                    <input type ="text" id ="name" placeholder="Enter your name" class = "right-column">
+                </div>
+                <div class="block">
+                    <label id="email-label" for="email" class = "left-column">* Email: </label>
+                    <input type ="email" id="email" placeholder="Enter your email" class = "right-column">
+                </div>
+                <div class="block">
+                    <label id="number-label" for="age" class = "left-column">* Age: </label>
+                    <input type="number" min = "16" max = "99" placeholder="Age" id="age-input" class = "right-column">
+                </div>
+                
+                <div class ="block">
+                    <label id="grade-label" class="left-column">Grade Level: </label>
+                    <div id="dropdown-box" class="right-column">
+                        <select id="dropdown">
+                            <option selected ="selected">select an option</option>
+                            <option value ="freshmen">Freshmen</option>
+                            <option value ="sophmore">Sophmore</option>
+                            <option value ="junior">Junior</option>
+                            <option value ="senior">Senior</option>
+                        </select><br>
+                    </div>
+                </div>
+                
+                <div class ="block">
+                    <!-- set input name's to be the same if you want only one checked like below radio buttons-->
+                    <label id="rating-label" class ="left-column">How did you like our previous concerts?</label>
+                    <div id="radio-box" class ="right-column">
+                        <input type ="radio" name ="rating" class="rating-dials"> You guys are doing a great job!<br>
+                        <input type ="radio" name ="rating" class="rating-dials"> Not bad but there's room for improvement<br>
+                        <input type ="radio" name ="rating" class="rating-dials"> I don't go to our school concerts<br>
+                        <input type ="radio" name ="rating" class="rating-dials"> It was whatever<br>
+                        <input type ="radio" name ="rating" class="rating-dials"> You guys have no taste in music :-(<br>
+                    </div> 
+                </div>
+
+                <div class="block">
+                <label id ="genre-label" class="left-column">Music genres that interest you:<br>(check all that apply)</label>
+                    <div id="genre-box" class ="right-column">
+                        <input type = "checkbox">Hip Hop<br>
+                        <input type = "checkbox">Rap<br>
+                        <input type = "checkbox">Indie<br>
+                        <input type = "checkbox">RnB<br>
+                        <input type = "checkbox">Alternative<br>
+                        <input type = "checkbox">EDM<br>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <label class="left-column">Suggest some artists: </label>
+                    <textarea rows ="2" cols = "40" class="right-column" placeholder="e.g. Swae Lee, French Motana, etc."></textarea><br>
+                </div>
+
+                <div id="submit-box">
+                    <input type="submit" value="Submit" id ="submit-btn">
+                </div>
+            </form>
+        </div>
+    </body>
+</hmtl> 
